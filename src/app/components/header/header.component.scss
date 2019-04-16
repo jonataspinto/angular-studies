@@ -1,0 +1,22 @@
+@import '../../../styles.scss';
+.my-header{
+    nav{
+        @include theme(60px, 100vw, $background);
+        @include flex (normal, center, center);
+        ul{
+            @include theme(100%, auto, none);
+            @include flex (row, center, center);
+            list-style: none;
+        }
+        li{
+            @include flex (normal, center, center);
+            @include theme(100%, auto, none);
+            padding:0px 10px;
+            text-transform: uppercase;
+            &:hover{
+                @include hover(lighten($background, 10%), 0.5s)
+            }
+            outline: none;
+        }
+    }
+}
