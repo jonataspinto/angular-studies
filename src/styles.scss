@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$background : rgb(65, 63, 63);
+
+@mixin flex($-flexDirection, $-justifyContent, $-alignItems){
+    display: flex;
+    flex-direction: $-flexDirection;
+    justify-content: $-justifyContent;
+    align-items: $-alignItems;
+}
+@mixin theme($height, $width, $backgroundColor){
+    height: $height;
+    width: $width;
+    background-color: $backgroundColor
+}
+@mixin hover($-backgroundColor, $transition){
+    background-color: $-backgroundColor;
+    transition: $transition;
+}
