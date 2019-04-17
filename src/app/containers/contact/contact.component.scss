@@ -1,0 +1,5 @@
+@import '../../../styles.scss';
+
+.container{
+    @include theme(calc(100vh - 120px), 100vw, $backgroundTwo)
+}
