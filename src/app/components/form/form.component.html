@@ -1,0 +1,6 @@
+<form action="" >
+  <app-input #name type = "{{type.TEXT}}" placeholder = "{{type.TEXT}}"></app-input>
+  <app-input #email type = "{{type.EMAIL}}" placeholder = "{{type.EMAIL}}"></app-input>
+  <app-input type = "{{type.PASSWORD}}" placeholder = "{{type.PASSWORD}}"></app-input>
+  <button type="submit" (click)="send(name, email)">send</button>
+</form>
