@@ -1,0 +1,6 @@
+@import '../../../styles.scss';
+
+footer{
+    @include theme(60px, 100vw, $background);
+    @include flex(normal, center, center);
+}

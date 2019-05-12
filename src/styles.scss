@@ -3,6 +3,8 @@
     padding: 0;
 }
 $background : rgb(65, 63, 63);
+$backgroundTwo : rgb(255, 254, 207);
+$boxshadow: 0px 4px 8px rgb(128, 124, 124);
 
 @mixin flex($-flexDirection, $-justifyContent, $-alignItems){
     display: flex;
@@ -13,7 +15,7 @@ $background : rgb(65, 63, 63);
 @mixin theme($height, $width, $backgroundColor){
     height: $height;
     width: $width;
-    background-color: $backgroundColor
+    background-color: $backgroundColor;
 }
 @mixin hover($-backgroundColor, $transition){
     background-color: $-backgroundColor;
